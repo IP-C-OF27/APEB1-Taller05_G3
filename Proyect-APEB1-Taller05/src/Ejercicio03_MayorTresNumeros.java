@@ -8,29 +8,21 @@ import java.util.Scanner;
 public class Ejercicio03_MayorTresNumeros {
     public static void main(String[] args) {
         Scanner tcl = new Scanner(System.in);
-        System.out.print("Ingrese el primer numero: ");
-        double n1 = tcl.nextDouble();
-        System.out.print("Ingrese el segundo numero: ");
-        double n2 = tcl.nextDouble();
-        System.out.print("Ingrese el tercer numero: ");
-        double n3 = tcl.nextDouble();
-        double mayor;
-        if (n1 > n2 && n1 > n3) {
+        System.out.print(" Deme 3 num : ");
+        int n1 = tcl.nextInt(),n2 = tcl.nextInt(),n3 = tcl.nextInt(), mayor;
+        if (n1 > n2) 
             mayor = n1;
-        } else if (n2 > n1 && n2 > n3) {
-            mayor = n2;
-        } else {
-            mayor = n3;
-        }
-        System.out.println("El numero mayor es: " + mayor);
+        else 
+         mayor = n2;
+         if ( mayor < n3) 
+         mayor = n3;
+       System.out.println(mayor);
     }
 }
 /***
  * EVIDENCIA DEL RUN:
  * run:
-Ingrese el primer numero: 6
-Ingrese el segundo numero: 9
-Ingrese el tercer numero: 2
-El numero mayor es: 9.0
-BUILD SUCCESSFUL (total time: 12 seconds)
+ Deme 3 num : 1 6 4
+6
+BUILD SUCCESSFUL (total time: 7 seconds)
  */
