@@ -8,29 +8,21 @@ import java.util.Scanner;
  */
 public class Ejercicio04_DescuentoenCompras {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Ingrese el precio original del producto: $");
-        double precio = sc.nextDouble();
-        double descuento = 0;
-        double precioFinal;
-        if (precio > 100) {
-            descuento = precio * 0.10;
-            precioFinal = precio - descuento;
-        } else {
-            precioFinal = precio;
-        }
-        System.out.println("Precio original: $" + precio);
-        System.out.println("Descuento aplicado: $" + descuento);
-        System.out.println("Precio final a pagar: $" + precioFinal);
+        double precio, factura;
+        Scanner tcl = new Scanner(System.in);
+        System.out.print("Deme precio: $");
+        precio = tcl.nextDouble();
+        factura = precio;
+        if (precio > 100)
+            precio *= 0.9;
+        System.out.println(precio);
     }
 }  
 /***
  * EVIDENCIA DEL RUN:
  * run:
-Ingrese el precio original del producto: $465
-Precio original: $465.0
-Descuento aplicado: $46.5
-Precio final a pagar: $418.5
-BUILD SUCCESSFUL (total time: 8 seconds)
+Deme precio: $1000
+900.0
+BUILD SUCCESSFUL (total time: 4 seconds)
  */
 
