@@ -7,28 +7,24 @@ import java.util.Scanner;
  */
 public class Ejercicio06_CategoriadeEdad {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Ingrese su edad: ");
-        int edad = sc.nextInt();
+        Scanner tcl = new Scanner(System.in);
+        int edad;
         String categoria;
-        if (edad < 0) {
-            categoria = "Edad no válida";
-        } else if (edad <= 12) {
-            categoria = "Niño";
-        } else if (edad <= 17) {
+        System.out.print("Deme edad: ");
+        edad = tcl.nextInt();
+        if (edad < 12)
+            categoria = "Nino";
+        else if (edad < 18)
             categoria = "Adolescente";
-        } else {
+        else
             categoria = "Adulto";
-        }
-        System.out.println("Edad: " + edad);
-        System.out.println("Categoria: " + categoria);
+        System.out.println("La persona de " + edad + " anios es: " + categoria);
     }
 }
 /***
  * EVIDENCIA DEL RUN:
  * run:
-Ingrese su edad: 18
-Edad: 18
-Categoria: Adulto
-BUILD SUCCESSFUL (total time: 6 seconds)
+Deme edad: 18
+La persona de 18 anios es: Adulto
+BUILD SUCCESSFUL (total time: 7 seconds)
  */
