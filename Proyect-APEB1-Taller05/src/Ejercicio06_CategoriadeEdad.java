@@ -1,18 +1,10 @@
-
 import java.util.Scanner;
-
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 /**
- *Clasificar a una persona en una categoría de edad (niño, adolescente, adulto)
- * en función de su edad.
- * Brithany Celi, David Acaro
+ * Ejercicio 06: "Categoría de Edad: Clasificar a una persona en una categoría
+ * de edad (niño, adolescente, adulto) en función de su edad."
+ * @author Brithany Celi, David Acaro
+ * @version 1.0
  */
-import java.util.Scanner;
-
 public class Ejercicio06_CategoriadeEdad {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -31,9 +23,11 @@ public class Ejercicio06_CategoriadeEdad {
         System.out.println("Edad: " + edad);
         System.out.println("Categoria: " + categoria);
     }
-}/***
+}
+/***
  * EVIDENCIA DEL RUN:
- Ingrese su edad: 18
+ * run:
+Ingrese su edad: 18
 Edad: 18
 Categoria: Adulto
 BUILD SUCCESSFUL (total time: 6 seconds)

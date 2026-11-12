@@ -1,14 +1,14 @@
 import java.util.Scanner;
-
 /**
- *Calcular el precio final de un producto con un descuento del 10% si
- * el precio original es mayor de $100; de lo contrario, no hay descuento.
- * Brithany Celi, David Acaro
+ * Ejercicio 04: "Descuento en Compras: Calcular el precio final de un
+ * producto con un descuento del 10% si el precio original es mayor de
+ * $100 ; De lo contrario, no hay descuento."
+ * @author Brithany Celi, David Acaro
+ * @version 1.0
  */
-public class Ejercicio_DescuentoenCompras {
+public class Ejercicio04_DescuentoenCompras {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         System.out.print("Ingrese el precio original del producto: $");
         double precio = sc.nextDouble();
         double descuento = 0;
@@ -26,7 +26,7 @@ public class Ejercicio_DescuentoenCompras {
 }  
 /***
  * EVIDENCIA DEL RUN:
-run:
+ * run:
 Ingrese el precio original del producto: $465
 Precio original: $465.0
 Descuento aplicado: $46.5

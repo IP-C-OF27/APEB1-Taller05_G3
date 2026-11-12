@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 /**
  * Ejercicio 03: "Mayor de tres numeros: Dados tres números distintos, 
@@ -28,7 +27,8 @@ public class Ejercicio03_MayorTresNumeros {
 }
 /***
  * EVIDENCIA DEL RUN:
- * Ingrese el primer numero: 6
+ * run:
+Ingrese el primer numero: 6
 Ingrese el segundo numero: 9
 Ingrese el tercer numero: 2
 El numero mayor es: 9.0

@@ -1,15 +1,9 @@
-
 import java.util.Scanner;
-
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 /**
- *Asignar una letra (A, B, C, D) a una calificación en función de su rango 
- * (A para 90-100, B para 80-89, etc.).
- * Brithany Celi, David Acaro
+ * Ejercicio 07: "Rango de Notas: Asignar una letra (A, B, C, D) a una
+ * calificación en función de su rango (A para 90-100, B para 80-89, etc.) ."
+ * @author Brithany Celi, David Acaro
+ * @version 1.0
  */
 public class Ejercicio07_RangodeNotas {
     public static void main(String[] args) {
@@ -36,10 +30,9 @@ public class Ejercicio07_RangodeNotas {
 }
 /***
  * EVIDENCIA DEL RUN:
-run:
+ * run:
 Ingrese la calificacion (0-100): 75
 Calificacion: 75
 Letra asignada: C
 BUILD SUCCESSFUL (total time: 4 seconds)
-
  */
