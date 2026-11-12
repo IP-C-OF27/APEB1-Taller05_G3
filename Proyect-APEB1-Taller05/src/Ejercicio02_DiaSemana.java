@@ -5,32 +5,40 @@ import java.util.Scanner;
  * @author David Acaro, Brithany Celi
  * @version 1.0
  */
+import java.util.Scanner;
+
 public class Ejercicio02_DiaSemana {
     public static void main(String[] args) {
+        // Usamos el teclado y le ponemos de nombre tcl
         Scanner tcl = new Scanner(System.in);
-        System.out.print("Deme nro. dia (1-7): ");
+
+        System.out.print("Ingrese un número del 1 al 7: ");
         int dia = tcl.nextInt();
-        String msjDia;
-        switch (dia) 
-        { //Inicio SENTENCIA DE SELECCION MULTIPLE
-            case 1: msjDia = "Lunes";
-                break;
-            case 2: msjDia = "Martes";
-                break;
-            case 3: msjDia = "Miercoles";
-                break;
-            case 4: msjDia = "Jueves";
-                break;
-            case 5: msjDia = "Viernes";
-                break;
-            case 6: msjDia = "Sabado";
-                break;
-            case 7: msjDia = "Domingo";
-                break;
-            default:
-                msjDia = "Error";
-        }//FIN SENTENCIA DE SELECCION MULTIPLE
-        System.out.println("El nro: " + dia + "corresponde a: " + msjDia);
+
+        String nombreDia; // Aquí vamos a guardar el día
+
+        // Aquí preguntamos uno por uno, como si fuera: ¿es 1? ¿es 2? ¿es 3?
+        if (dia == 1) {
+            nombreDia = "Lunes";
+        } else if (dia == 2) {
+            nombreDia = "Martes";
+        } else if (dia == 3) {
+            nombreDia = "Miércoles";
+        } else if (dia == 4) {
+            nombreDia = "Jueves";
+        } else if (dia == 5) {
+            nombreDia = "Viernes";
+        } else if (dia == 6) {
+            nombreDia = "Sábado";
+        } else if (dia == 7) {
+            nombreDia = "Domingo";
+        } else {
+            nombreDia = "Número inválido. Debe ser del 1 al 7.";
+        }
+
+        System.out.println("El día es: " + nombreDia);
+
+        tcl.close();
     }
 }
 /***
